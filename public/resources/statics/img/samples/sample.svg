@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="1000" height="1000" viewBox="0 0 1000 1000" version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+    <title>S</title>
+    <g>
+        <circle cx="500" cy="500" r="500" fill="#ffffff"/>
+        <circle cx="500" cy="500" r="490" fill="#ffcc00"/>
+        <circle cx="500" cy="500" r="430" fill="#ffffff"/>
+        <path d="M 650,200 Q 100,300 500,500 T 350,800" stroke="#ffcc00" stroke-width="200" fill="none"/>
+    </g>
+</svg>

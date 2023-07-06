@@ -1,0 +1,39 @@
+[
+    {
+        "method" : "GET",
+        "path": "/",
+        "action": [
+            "application\\middlewares\\owo\\OwoProgressiveWebAppMiddleware",
+            "application\\controllers\\owo\\OwoHomeController",
+            "application\\views\\owo\\OwoHomeView"
+        ],
+        "middlewares": [
+
+        ],
+        "name": "Home"
+    },
+    {
+        "method" : "GET",
+        "path": "/maintenance",
+        "action": [
+            "application\\controllers\\owo\\OwoMaintenanceController",
+            "application\\views\\owo\\OwoMaintenanceView"
+        ],
+        "middlewares": [
+
+        ],
+        "name": "Maintenance"
+    },
+    {
+        "method" : "GET",
+        "path": "/not-found",
+        "action": [
+            "application\\controllers\\owo\\OwoNotFoundController",
+            "application\\views\\owo\\OwoNotFoundView"
+        ],
+        "middlewares": [
+
+        ],
+        "name": "Whoops"
+    }
+]

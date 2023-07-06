@@ -1,0 +1,6 @@
+{
+    "languages" : {
+        "catalog" : ["EN", "FR"],
+        "default" : "EN"
+    }
+}

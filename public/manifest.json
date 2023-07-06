@@ -1,0 +1,61 @@
+{
+    "name": "OWO - Progressive Web App",
+    "short_name": "OWO - ProWebApp",
+    "description": "OWO is a PHP framework & a Progressive Web App",
+    "orientation": "portrait",
+    "display": "standalone",
+    "background_color": "#102030",
+    "theme_color": "#ffcc00",
+    "id": "/",
+    "start_url": "/",
+    "scope": "/",
+    "serviceworker": {
+        "src": "/sworker.js",
+        "scope": "/",
+        "update_via_cache": "imports"
+    },
+    "prefer_related_applications": true,
+    "related_applications": [
+        {
+            "platform": "play",
+            "id": "com.google.samples.apps.iosched"
+        }
+    ],
+    "icons": [
+        {
+            "src": "/resources/statics/img/samples/s48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/resources/statics/img/samples/s96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/resources/statics/img/samples/s120x120.png",
+            "type": "image/png",
+            "sizes": "120x120"
+        },
+        {
+            "src": "/resources/statics/img/samples/s144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/resources/statics/img/samples/s192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/resources/statics/img/samples/s384x384.png",
+            "type": "image/png",
+            "sizes": "384x384"
+        },
+        {
+            "src": "/resources/statics/img/samples/s512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

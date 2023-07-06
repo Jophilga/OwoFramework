@@ -1,0 +1,42 @@
+<IfModule mod_rewrite.c>
+
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    <IfModule mod_deflate.c>
+        SetOutputFilter DEFLATE
+        AddOutputFilterByType DEFLATE text/html
+        AddOutputFilterByType DEFLATE text/css
+        AddOutputFilterByType DEFLATE text/plain
+        AddOutputFilterByType DEFLATE text/javascript
+        AddOutputFilterByType DEFLATE application/javascript
+        AddOutputFilterByType DEFLATE text/xml
+    </IfModule>
+
+    RewriteEngine On
+
+    RewriteBase /
+
+    ErrorDocument 400 /onerror.php
+    ErrorDocument 401 /onerror.php
+    ErrorDocument 403 /onerror.php
+    ErrorDocument 404 /onerror.php
+    ErrorDocument 500 /onerror.php
+
+    #RewriteCond %{HTTPS} on
+    #RewriteCond %{REQUEST_SCHEME} http
+    #RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [QSA,R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [QSA,R=301,L]
+
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [QSA,L]
+
+</IfModule>

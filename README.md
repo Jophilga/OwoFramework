@@ -15,7 +15,7 @@ Improvements and pull requests are welcome.
 To run this framework appliaction, you need to clone it and install dependencies:
 
 ```
-git clone https://github.com/JohnCOD4BO/OwoFramework.git
+git clone https://github.com/Jophilga/OwoFramework.git
 cd OwoFramework-main/
 composer install
 ```
